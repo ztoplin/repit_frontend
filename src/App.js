@@ -5,10 +5,11 @@ import TextField from "@mui/material/TextField";
 import MapsHomeWorkIcon from "@mui/icons-material/MapsHomeWork";
 
 import { fetchRepsAndComByAddress } from "./api";
-import "./App.css";
 import OfficeCardContainer from "./components/OfficeCardContainer";
 import Login from "./components/Login";
+
 import { colors, backgroundGradient, h1Styling } from "./constants";
+import "./App.css";
 
 function App() {
   const [addressSearchText, setAddressSearchText] = useState("");

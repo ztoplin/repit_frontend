@@ -1,3 +1,9 @@
+export const endpoints = {
+  API: 'http://localhost:3001/api',
+  LOGIN: 'http://localhost:3001/login',
+  UPDATE_OFFICE: 'http://localhost:3001/offices' 
+}
+
 export const colors = {
   lightBlue: "#9CB0C3",
   midBlue: "#3D6C95",
@@ -12,12 +18,6 @@ export const colors = {
   midOrange: "#E6AA54",
   deepOrange: "#C7790A",
 };
-
-export const endpoints = {
-  API: 'http://localhost:3001/api',
-  LOGIN: 'http://localhost:3001/login',
-  UPDATE_OFFICE: 'http://localhost:3001/offices' 
-}
 
 const { deepBlue, lightBlue, lightOrange, deepOrange} = colors;
 
