@@ -30,13 +30,18 @@ export const submitOfficeDescription = ({
   officeObject: { name: title },
   officeDescriptionText: description
 }) =>
-  fetch(endpoints.UPDATE_OFFICE, {
+  {   
+    const jwt = JSON.parse(localStorage.getItem("user")).token
+
+    fetch(endpoints.UPDATE_OFFICE, {
     method: "PUT",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      "Authorization": jwt
     },
     body: JSON.stringify({
       title,
-      description
+      description, 
     })
-  });
+  })
+}
