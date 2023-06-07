@@ -37,7 +37,7 @@ export const submitOfficeDescription = ({
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": jwt
+      "authorization": jwt
     },
     body: JSON.stringify({
       title,
